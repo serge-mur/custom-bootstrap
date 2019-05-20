@@ -19,4 +19,8 @@
 //= ../../../node_modules/bootstrap/js/dist/toast.js
 
 // Импортируем другие js-файлы
+
+// A touch slideout navigation menu for your mobile web apps.
+//= ../../../node_modules/slideout/dist/slideout.min.js
+
 //= my.js

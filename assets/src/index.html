@@ -1,34 +1,52 @@
 <!doctype html>
 <html lang="ru">
+
 <head>
     //= template/head.html
 </head>
+
 <body>
-    <header id="header">
-        //= template/header.html
-    </header>
 
-    <main id="main" class="my-2">
+    <nav id="menu">
+        <h2>Menu</h2>
+        <nav class="nav flex-column">
+            <a class="nav-link active" href="#">Active</a>
+            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link" href="#">Link</a>
+            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+        </nav>
+    </nav>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-6">
-                    Раз два три
-                </div>
-                <div class="col-6">
-                    <img class="img-fluid" src="img/store1.png" alt="">
-                </div>
-                <div class="col-12">
-                    <button class="btn btn-danger">Кнопка</button>
+    <div id="panel">
+
+        <button class="toggle-button">☰</button>
+
+        <header id="header">
+            //= template/header.html
+        </header>
+
+        <main id="main" class="my-2">
+
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-3">
+                        //= template/card.html
+                    </div>
+                    <div class="col-12 col-lg-3">
+                        //= template/card.html
+                    </div>
                 </div>
             </div>
-        </div>        
 
-    </main>
+        </main>
 
-    <footer id="footer">
-        //= template/footer.html
-    </footer>
+        <footer id="footer">
+            //= template/footer.html
+        </footer>
+
+    </div>
+    <!-- end #panel -->
 
 </body>
+
 </html>
